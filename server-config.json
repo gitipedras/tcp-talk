@@ -1,0 +1,4 @@
+{
+  "server_name": "tcp-test-server", // warning, may not work
+  "port": 4000
+}

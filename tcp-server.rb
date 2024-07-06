@@ -24,9 +24,11 @@ loop do
 
   Thread.start(client) do |client_conn|
     begin
-      client_conn.puts "Hello, welcome to #{server_name}"
 
-      
+    srv_name = "TCP Test Server"
+    client_conn.puts "Hello, welcome to #{srv_name}"
+
+
       loop do
         msg = client_conn.gets&.chomp
         break if msg.nil? || msg == "exit"
